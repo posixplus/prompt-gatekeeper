@@ -1,0 +1,14 @@
+{
+  "name": "prompt-gatekeeper",
+  "owner": {
+    "name": "Jay",
+    "email": "2005jay@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "prompt-gatekeeper",
+      "source": "./",
+      "description": "Score prompts against a 6-pillar rubric before execution, ask targeted clarifying questions, and run an enhanced version of the prompt. Includes an optional hook for true per-prompt interception."
+    }
+  ]
+}

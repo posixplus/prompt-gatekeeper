@@ -1,0 +1,26 @@
+{
+  "skill_name": "prompt-gatekeeper",
+  "evals": [
+    {
+      "id": 0,
+      "eval_name": "strict-tag-vague-prompt",
+      "prompt": "[gatekeeper] set up a database for my recipe sharing app",
+      "expected_output": "Full 6-pillar scorecard with gaps identified (Task vague, Context missing, Output unspecified), 1-3 targeted clarifying questions, no premature execution, no bounce-back template demanding resubmission.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "eval_name": "judgment-mode-vague-request",
+      "prompt": "build me a REST API for managing gym memberships, needs to handle members signing up and their payments and stuff like that",
+      "expected_output": "Skill triggers on its own (no tag), scores the prompt, identifies real gaps (stack unspecified, payment provider unknown, deliverable format unclear), asks targeted questions instead of dumping a generic scaffold.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "eval_name": "strict-tag-clean-prompt",
+      "prompt": "[gatekeeper] As a senior Python engineer, write a single file rate_limiter.py implementing a thread-safe token bucket rate limiter class with acquire() and try_acquire(timeout) methods, stdlib only, Python 3.11+, full docstrings, and a __main__ demo block. No external dependencies, no async variant.",
+      "expected_output": "One-line clean pass (e.g. 'Gatekeeper: 5/5 (Process n/a) — executing.') followed immediately by the working code. No invented gaps, no unnecessary questions.",
+      "files": []
+    }
+  ]
+}

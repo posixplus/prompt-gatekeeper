@@ -1,0 +1,11 @@
+{
+  "name": "prompt-gatekeeper",
+  "description": "Score prompts against a 6-pillar rubric before execution, ask targeted clarifying questions, and run an enhanced version of the prompt. Includes an optional hook for true per-prompt interception.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Jay",
+    "email": "2005jay@gmail.com"
+  },
+  "keywords": ["prompt-engineering", "prompt-enhancement", "gatekeeper", "quality"],
+  "hooks": "./hooks/hooks.json"
+}
