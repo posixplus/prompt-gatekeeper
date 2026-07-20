@@ -40,7 +40,7 @@ Say "just run it" at any point to skip the questions and execute with stated bes
 ### As a Claude Code plugin (recommended: skill + optional hook)
 
 ```
-/plugin marketplace add YOUR_GITHUB_USERNAME/prompt-gatekeeper
+/plugin marketplace add posixplus/prompt-gatekeeper
 /plugin install prompt-gatekeeper@prompt-gatekeeper
 ```
 
